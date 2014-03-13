@@ -7,6 +7,5 @@
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/MdsCommon"/>
 	<classpathentry kind="lib" path="/GPSTest/libs/android-support-v4.jar"/>
-	<classpathentry kind="lib" path="C:/Users/cedric/Desktop/android-support-v4.jar"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>
