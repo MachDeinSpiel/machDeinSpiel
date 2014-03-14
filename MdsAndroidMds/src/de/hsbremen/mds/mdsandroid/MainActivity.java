@@ -29,12 +29,14 @@ import android.support.v4.view.ViewPager;
 import android.util.Log;
 import android.widget.Button;
 import android.widget.TextView;
+import de.hsbremen.mds.common.interfaces.GuiInterface;
 import de.hsbremen.mds.common.listener.AndroidInitiater;
 import de.hsbremen.mds.common.listener.AndroidListener;
 import de.hsbremen.mds.common.valueobjects.MdsImage;
 import de.hsbremen.mds.common.valueobjects.MdsMap;
 import de.hsbremen.mds.common.valueobjects.MdsText;
 import de.hsbremen.mds.common.valueobjects.MdsVideo;
+import de.hsbremen.mds.interpreter.Interpreter;
 
 public class MainActivity extends FragmentActivity implements TabListener,
 		LocationListener, GuiInterface {
@@ -103,7 +105,7 @@ public class MainActivity extends FragmentActivity implements TabListener,
 		addTab("Video");
 		
 		// TODO: Hier muss noch ein Möglichkeit gefunden werden den Interpreter oder ein Interface zu erstellen
-//		Interpreter interpreter = new Interpreter(jsonDatei, this);
+		Interpreter interpreter = new Interpreter(jsonDatei, this);
 		
 		initComplete = true;
 		
@@ -361,6 +363,15 @@ public class MainActivity extends FragmentActivity implements TabListener,
 
 	public void removeTab(int site) {
 		actionBar.removeTabAt(site);
+	}
+
+
+
+
+	@Override
+	public void update() {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

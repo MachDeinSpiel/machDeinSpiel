@@ -4,8 +4,10 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.HashMap;
 import java.util.List;
 
+import android.util.Log;
+
 import de.hsbremen.mds.common.interfaces.GuiInterface;
-import de.hsbremen.mds.common.valueobjects.MdsItem;
+import de.hsbremen.mds.common.valueobjects.statemachine.MdsItem;
 import de.hsbremen.mds.common.valueobjects.statemachine.MdsAction;
 import de.hsbremen.mds.common.valueobjects.statemachine.MdsActionExecutable;
 import de.hsbremen.mds.common.valueobjects.statemachine.MdsAttribute;

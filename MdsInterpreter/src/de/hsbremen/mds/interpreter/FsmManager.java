@@ -4,6 +4,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Vector;
 
+import android.util.Log;
+
 import de.hsbremen.mds.common.valueobjects.statemachine.MdsEvent;
 import de.hsbremen.mds.common.valueobjects.statemachine.MdsState;
 import de.hsbremen.mds.common.valueobjects.statemachine.MdsTransition;

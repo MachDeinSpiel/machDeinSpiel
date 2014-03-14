@@ -3,7 +3,8 @@ package de.hsbremen.mds.interpreter;
 import java.util.HashMap;
 import java.util.List;
 
-import javax.xml.stream.Location;
+import android.location.Location;
+import android.util.Log;
 
 import de.hsbremen.mds.common.valueobjects.statemachine.MdsAttribute;
 import de.hsbremen.mds.common.valueobjects.statemachine.MdsEvent;

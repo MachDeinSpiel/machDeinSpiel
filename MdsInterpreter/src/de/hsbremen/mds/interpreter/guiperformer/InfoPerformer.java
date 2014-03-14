@@ -2,6 +2,8 @@ package de.hsbremen.mds.interpreter.guiperformer;
 
 import java.util.HashMap;
 
+import android.util.Log;
+
 import de.hsbremen.mds.common.interfaces.GuiInterface;
 import de.hsbremen.mds.common.valueobjects.MdsText;
 

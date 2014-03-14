@@ -4,7 +4,6 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.text.ParseException;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
@@ -13,7 +12,9 @@ import java.util.Set;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 
+import de.hsbremen.mds.common.interfaces.InterpreterInterface;
 import de.hsbremen.mds.common.valueobjects.statemachine.MdsAction;
 import de.hsbremen.mds.common.valueobjects.statemachine.MdsEvent;
 import de.hsbremen.mds.common.valueobjects.statemachine.MdsExhibit;
@@ -24,7 +25,7 @@ import de.hsbremen.mds.common.valueobjects.statemachine.MdsTransition;
 
 public class Parser {
 
-	public Parser(Interpreter interpreter, File jsonFile){
+	public Parser(InterpreterInterface interpreter, File jsonFile){
 		//TODO: braucht ihr üerbaupt ein File-Object? Wenn nicht einfach Typ ändern, wir
 		//		(Interpretergruppe) ändern dann unseren Aufruf
 		//TODO: Interpreter zwischenspeichern

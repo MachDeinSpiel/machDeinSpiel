@@ -2,19 +2,23 @@ package de.hsbremen.mds.interpreter;
 
 import java.io.File;
 
+import android.util.Log;
+
 import de.hsbremen.mds.common.interfaces.GuiInterface;
+import de.hsbremen.mds.common.interfaces.InterpreterInterface;
 import de.hsbremen.mds.common.listener.AndroidListener;
 import de.hsbremen.mds.common.valueobjects.statemachine.MdsEvent;
 import de.hsbremen.mds.common.valueobjects.statemachine.MdsObjectContainer;
 import de.hsbremen.mds.common.valueobjects.statemachine.MdsState;
 import de.hsbremen.mds.interpreter.exceptions.InvalidFsmException;
+import de.hsbremen.mds.parser.Parser;
 
 /**
  * @author JG, NH, JW
  */
 
 //Interpreter
-public class Interpreter implements StateChangedListener, AndroidListener {
+public class Interpreter implements InterpreterInterface, StateChangedListener, AndroidListener {
 	
 	private GuiInterface guiInterface;
 	private FsmManager fsmManager;
