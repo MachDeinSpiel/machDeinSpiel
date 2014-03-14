@@ -12,4 +12,6 @@ public interface GuiInterface {
         void nextFragment(MdsVideo mds);
         void nextFragment(MdsText mds);
         void nextFragment(MdsMap mds);
+        
+        void update();
 }
