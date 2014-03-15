@@ -17,6 +17,7 @@ import android.app.ActionBar.Tab;
 import android.app.ActionBar.TabListener;
 import android.app.FragmentTransaction;
 import android.content.Context;
+import android.content.res.AssetManager;
 import android.graphics.Color;
 import android.location.Location;
 import android.location.LocationListener;
@@ -309,17 +310,17 @@ public class MainActivity extends FragmentActivity implements TabListener,
 				}
 
 //				Zum Testen bitte drin lassen!!
-//				// Assetmanager um auf den Assetordner zuzugreifen(Json ist da drin)
-//
-//				    AssetManager am = getAssets();
-//
-//				      // Inputstream zum einlesen der Json
-//				      try {
-//						is = am.open("test.json");
-//					} catch (IOException e1) {
-//						// TODO Auto-generated catch block
-//						e1.printStackTrace();
-//					}
+				// Assetmanager um auf den Assetordner zuzugreifen(Json ist da drin)
+
+				    AssetManager am = getAssets();
+
+				      // Inputstream zum einlesen der Json
+				      try {
+						is = am.open("test.json");
+					} catch (IOException e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					}
 
 				try {
 					// Inputstream zum einlesen der Json
